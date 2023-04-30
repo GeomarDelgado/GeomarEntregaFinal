@@ -1,0 +1,79 @@
+footer {
+    background-color: rgba(100, 148, 237, 0.37);
+}
+
+.footer__contenedor{
+    padding-top: 2em;
+}
+
+.footer {
+
+    &__logo {
+        width: 100%;
+    }
+
+    &__imagen {
+        text-align: center;
+    }
+
+    &__parrafo {
+        font-size: 1rem;
+    }
+
+    &__titulo {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        font-size: 2rem;
+        padding: 0.4em;
+    }
+
+    &__redes {
+        width: 100%;
+        text-align: center;
+        padding: 0.4em;
+    }
+
+    &__ubicacion {
+        width: 100%;
+        padding: 1em;
+    }
+
+    &__pie-pagina {
+        text-align: center;
+        display: flex;
+        background-color: black;
+        color: white;
+    }
+
+}
+
+@media (min-width: 600px) {
+
+    .footer{
+    
+     &__contenedor {
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr 1fr;
+         grid-template-rows: 4fr 50px;
+         row-gap: 10px;
+         column-gap: 10px;
+     }
+
+     &__pie-pagina {
+         grid-column: span 5;
+         justify-content: space-around;
+     }
+
+     &__redes {
+         display: flex;
+         flex-direction: column;
+     }
+
+     &__logo {
+         display: flex;
+         align-items: center;
+
+     }
+    }
+
+ }

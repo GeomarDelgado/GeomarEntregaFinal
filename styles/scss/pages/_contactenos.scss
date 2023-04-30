@@ -1,0 +1,50 @@
+.contacto {
+    font-size: 1rem;
+    padding: 2em 1em;
+    text-align: center;
+}
+
+label {
+    width: 80%;
+    display: inline-block;
+}
+
+.campos__contenedor{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: solid 3px orangered;
+    border-radius: 4px;
+    padding: 1em;
+    margin-top: 2em;
+}
+
+@media (min-width: 600px) {
+    .contacto__encabezado {
+        display: flex;
+        gap: 20px;
+        justify-content: space-around;
+    }
+
+    .campos__contenedor {
+        width: 500px;
+    }
+
+    .formulario{
+        align-items: center;
+        display: inline-block;  
+    }
+
+    .campos__formulario {
+        display: flex;
+    }
+ 
+    label{
+        width: 150px;
+    }
+
+    input{
+        width: 150px;
+    }
+
+}

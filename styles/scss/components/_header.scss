@@ -1,0 +1,27 @@
+.header {
+    background-color: rgba(210, 30, 30, 0.205);
+    font-size: 1rem;
+
+    &__title {
+        text-align: center;
+        font-size: 1.2rem;
+        grid-column: span 2;
+    }
+}
+
+.login {
+    text-align: right;
+    grid-column: span 2;
+    padding: 0.5em;
+    height: 0.3em;
+    font-size: 1rem;
+}
+
+@media (min-width: 600px) {
+    .header {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: minmax(150px, 8vh) 80px;
+    }
+
+}

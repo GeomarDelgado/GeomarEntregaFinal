@@ -1,0 +1,398 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+  background-color: rgba(210, 30, 30, 0.205);
+  font-size: 1rem;
+}
+.header__title {
+  text-align: center;
+  font-size: 1.2rem;
+  grid-column: span 2;
+}
+
+.login {
+  text-align: right;
+  grid-column: span 2;
+  padding: 0.5em;
+  height: 0.3em;
+  font-size: 1rem;
+}
+
+@media (min-width: 600px) {
+  .header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: minmax(150px, 8vh) 80px;
+  }
+}
+.nav {
+  background-color: rgb(0, 217, 255);
+  margin-top: 30px;
+  grid-column: span 2;
+}
+.nav__list {
+  width: 100%;
+  font-size: 1.2rem;
+  text-align: center;
+  list-style: none;
+}
+.nav__item {
+  padding: 0.2em;
+}
+.nav__btn {
+  text-decoration: none;
+  padding: 0.5em;
+  color: brown;
+  border-radius: 40px;
+}
+.nav__btn:hover {
+  background-color: orange;
+}
+
+@media (min-width: 600px) {
+  .nav__list {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+footer {
+  background-color: rgba(100, 148, 237, 0.37);
+}
+
+.footer__contenedor {
+  padding-top: 2em;
+}
+
+.footer__logo {
+  width: 100%;
+}
+.footer__imagen {
+  text-align: center;
+}
+.footer__parrafo {
+  font-size: 1rem;
+}
+.footer__titulo {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  font-size: 2rem;
+  padding: 0.4em;
+}
+.footer__redes {
+  width: 100%;
+  text-align: center;
+  padding: 0.4em;
+}
+.footer__ubicacion {
+  width: 100%;
+  padding: 1em;
+}
+.footer__pie-pagina {
+  text-align: center;
+  display: flex;
+  background-color: black;
+  color: white;
+}
+
+@media (min-width: 600px) {
+  .footer__contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 4fr 50px;
+    row-gap: 10px;
+    column-gap: 10px;
+  }
+  .footer__pie-pagina {
+    grid-column: span 5;
+    justify-content: space-around;
+  }
+  .footer__redes {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__logo {
+    display: flex;
+    align-items: center;
+  }
+}
+.obras {
+  font-size: 1rem;
+  padding: 2em 1em;
+}
+.obras__titulo {
+  text-align: center;
+  font-size: 2rem;
+  padding: 0.2em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.obras__contenedor {
+  width: 100%;
+  gap: 2em;
+}
+.obras__parrafo {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
+  width: 100%;
+}
+.obras__video {
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .obras__contenedor {
+    display: flex;
+  }
+  .obras__titulo {
+    text-align: left;
+  }
+}
+.servicios {
+  background-color: rgba(255, 228, 196, 0.568);
+}
+.servicios__titulo {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  font-size: 2rem;
+  padding: 0.4em;
+}
+.servicios__img {
+  width: 100%;
+  padding: 1em 1em;
+  font-size: 1rem;
+}
+.servicios__btn {
+  width: 100%;
+  padding: 0.3em;
+  font-size: 1rem;
+}
+
+@media (min-width: 600px) {
+  .servicios__contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+  }
+}
+.lectura__titulo {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  font-size: 2rem;
+  padding: 0.4em;
+}
+
+.lectura {
+  font-size: 1rem;
+  padding: 1em 1em;
+}
+.lectura__imagen {
+  width: 100%;
+}
+.lectura__parrafo {
+  text-align: justify;
+}
+
+.lectura__banner {
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .lectura__contenedor {
+    display: flex;
+  }
+}
+.lider__contenedor {
+  font-size: 1rem;
+  padding: 2em 1em;
+  text-align: center;
+}
+.lider__nombre {
+  color: blueviolet;
+}
+.lider__parrafo {
+  text-align: justify;
+  font-size: 1rem;
+}
+
+.labor__titulo {
+  color: blueviolet;
+}
+.labor__video {
+  width: 100%;
+}
+.labor__parrafo {
+  text-align: justify;
+  font-size: 1rem;
+}
+
+.fundadora__nombre {
+  color: blueviolet;
+}
+.fundadora__foto {
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .contenedor__fundadora {
+    display: flex;
+    gap: 3em;
+  }
+  .lider__responsive {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 0.5fr 2fr;
+  }
+  .lider__contenedor {
+    grid-row: 1/3;
+  }
+  .lider__responsive2 {
+    grid-row: 2/3;
+    padding-top: 2em;
+  }
+  .lider__parrafo {
+    text-align: justify;
+  }
+  .labor__contenedor {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 2em;
+  }
+  .labor__responsive {
+    padding-top: 2em;
+  }
+}
+.contacto {
+  font-size: 1rem;
+  padding: 2em 1em;
+  text-align: center;
+}
+
+label {
+  width: 80%;
+  display: inline-block;
+}
+
+.campos__contenedor {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: solid 3px orangered;
+  border-radius: 4px;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+@media (min-width: 600px) {
+  .contacto__encabezado {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+  }
+  .campos__contenedor {
+    width: 500px;
+  }
+  .formulario {
+    align-items: center;
+    display: inline-block;
+  }
+  .campos__formulario {
+    display: flex;
+  }
+  label {
+    width: 150px;
+  }
+  input {
+    width: 150px;
+  }
+}
+.donaciones {
+  font-size: 1rem;
+  padding: 2em 1em;
+  text-align: center;
+}
+.donaciones__transferencias {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+.donaciones__tc {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+.donaciones__imagen {
+  width: 100%;
+}
+.donaciones__datos {
+  text-align: justify;
+}
+
+@media (min-width: 600px) {
+  .donaciones__transferencias {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+  .donaciones__tc {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+.socios {
+  font-size: 1rem;
+  padding: 2em 1em;
+  text-align: center;
+}
+.socios__imagen {
+  width: 100%;
+}
+.socios__parrafo {
+  text-align: justify;
+}
+
+.planes {
+  font-size: 1rem;
+  padding: 1em 1em;
+  text-align: center;
+}
+
+.socios__activos {
+  font-size: 1rem;
+  padding: 1em 1em;
+  text-align: center;
+}
+
+.encabezado {
+  font-size: 1rem;
+  padding: 2em 1em;
+  text-align: center;
+}
+.encabezado__formulario {
+  font-size: 1rem;
+  padding: 2em 1em;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  .planes__lista {
+    display: flex;
+    gap: 50px;
+  }
+  .formulario {
+    width: 500px;
+  }
+  .formulario__socios {
+    align-items: center;
+    display: inline-block;
+  }
+  .campos__socios {
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

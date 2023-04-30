@@ -1,0 +1,79 @@
+.lider {
+    &__contenedor {
+        font-size: 1rem;
+        padding: 2em 1em;
+        text-align: center;
+    }
+
+    &__nombre {
+        color: blueviolet;
+    }
+
+    &__parrafo {
+        text-align: justify;
+        font-size: 1rem;
+    }
+}
+
+.labor {
+    &__titulo {
+        color: blueviolet;
+    }
+
+    &__video {
+        width: 100%;
+    }
+
+    &__parrafo {
+        text-align: justify;
+        font-size: 1rem;
+    }
+
+}
+
+.fundadora {
+    &__nombre {
+        color: blueviolet;
+    }
+
+    &__foto {
+        width: 100%;
+    }
+}
+
+@media (min-width: 600px) {
+    .contenedor__fundadora{
+        display: flex;
+        gap: 3em;
+    }
+
+    .lider__responsive{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 0.5fr 2fr;
+    }
+    .lider__contenedor{
+        grid-row: 1/3;
+    }
+
+     .lider__responsive2{
+         grid-row: 2/3;
+         padding-top: 2em;
+     }
+
+    .lider__parrafo{
+        text-align: justify;
+    }
+
+    .labor__contenedor{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        gap: 2em;
+    }
+
+    .labor__responsive{
+        padding-top: 2em;
+    }
+
+
+}
