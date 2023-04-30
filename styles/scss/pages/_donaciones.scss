@@ -17,6 +17,21 @@
 
     &__imagen {
         width: 100%;
+        margin-top: 2em;
+        -webkit-box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 4px 5px 47px 20px rgba(0, 0, 0, 0);
+        box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 4px 5px 47px 20px rgba(0, 0, 0, 0);
+        
+        animation-name: mover-chanchito;
+        animation-duration: 5s;
+        animation-iteration-count: 3;
+        animation-delay: 3s;
+
+        @keyframes mover-chanchito{
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+       
     }
 
     &__datos {

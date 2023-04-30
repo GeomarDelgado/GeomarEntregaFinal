@@ -1,11 +1,12 @@
 .header {
-    background-color: rgba(210, 30, 30, 0.205);
-    font-size: 1rem;
+    background: rgb(5,27,200);
+    background: radial-gradient(circle, rgba(5,27,200,1) 13%, rgba(240,2,229,0.8654708520179373) 36%, rgba(2,0,255,0.9865470852017937) 79%);
 
     &__title {
         text-align: center;
         font-size: 1.2rem;
         grid-column: span 2;
+
     }
 }
 

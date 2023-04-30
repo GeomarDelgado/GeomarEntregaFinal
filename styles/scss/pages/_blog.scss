@@ -3,6 +3,7 @@
     text-align: center;
     font-size: 2rem;
     padding: 0.4em;
+    color: crimson;
 }
 
 .lectura{
@@ -11,6 +12,7 @@
 
     &__imagen{
         width: 100%;
+        
     }
 
     &__parrafo{
@@ -28,3 +30,4 @@
         display: flex;
     }
 }
+
