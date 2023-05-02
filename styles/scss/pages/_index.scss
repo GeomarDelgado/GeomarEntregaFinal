@@ -7,6 +7,22 @@
         font-size: 2rem;
         padding: 0.2em;
         font-family: Georgia, 'Times New Roman', Times, serif;
+        color: cornflowerblue;
+
+        animation-name: mover-texto;
+        animation-duration: 10s;
+        animation-iteration-count: 1;
+        animation-delay: 2s;
+        animation-direction:alternate-reverse  ;
+        animation-timing-function: ease-in-out;
+
+        @keyframes mover-texto {
+            100% {
+                color:coral;
+                translate: 350px 0px;
+            }
+        }
+
     }
 
     &__contenedor {
@@ -45,6 +61,7 @@
         text-align: center;
         font-size: 2rem;
         padding: 0.4em;
+        color: cornflowerblue;
     }
 
     &__img {
