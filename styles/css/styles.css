@@ -2,14 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .header {
   background: rgb(5, 27, 200);
   background: radial-gradient(circle, rgb(5, 27, 200) 13%, rgba(240, 2, 229, 0.865470852) 36%, rgba(2, 0, 255, 0.9865470852) 79%);
 }
-.header__title {
+.header__title, .nav__btn:hover {
   text-align: center;
   font-size: 1.2rem;
   grid-column: span 2;
@@ -32,8 +31,9 @@
 }
 .nav {
   background-color: rgba(255, 99, 71, 0.932);
-  margin-top: 30px;
+  margin-top: 20px;
   grid-column: span 2;
+  padding: 0.75em;
 }
 .nav__list {
   width: 100%;
@@ -51,7 +51,7 @@
   border-radius: 40px;
 }
 .nav__btn:hover {
-  background-color: orange;
+  background-color: rgba(255, 166, 0, 0.774);
 }
 
 @media (min-width: 600px) {
@@ -76,6 +76,8 @@ footer {
   text-align: center;
 }
 .footer__parrafo {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1em;
   font-size: 1rem;
   text-align: justify;
   padding: 2em;
@@ -123,6 +125,10 @@ footer {
     align-items: center;
   }
 }
+.header__title, .nav__btn:hover {
+  color: aquamarine;
+}
+
 .obras {
   font-size: 1rem;
   padding: 2em 1em;
@@ -151,7 +157,8 @@ footer {
   gap: 2em;
 }
 .obras__parrafo {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1em;
   text-align: justify;
   width: 100%;
   padding: 1em;
@@ -211,6 +218,8 @@ footer {
   width: 100%;
 }
 .lectura__parrafo {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1em;
   text-align: justify;
 }
 
@@ -232,6 +241,8 @@ footer {
   color: blueviolet;
 }
 .lider__parrafo {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1em;
   text-align: justify;
   font-size: 1rem;
   padding: 1em;
@@ -246,6 +257,8 @@ footer {
   width: 100%;
 }
 .labor__parrafo {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1em;
   text-align: justify;
   font-size: 1rem;
   -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 4px 5px 47px 20px #000000;
@@ -388,6 +401,8 @@ label {
   width: 100%;
 }
 .socios__parrafo {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1em;
   text-align: justify;
 }
 
@@ -395,6 +410,8 @@ label {
   font-size: 1rem;
   padding: 1em 1em;
   text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1em;
 }
 
 .socios__activos {

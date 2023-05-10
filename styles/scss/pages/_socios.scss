@@ -8,6 +8,7 @@
     }
 
     &__parrafo {
+        @include parrafo;
         text-align: justify;
     }
 }
@@ -16,6 +17,7 @@
     font-size: 1rem;
     padding: 1em 1em;
     text-align: center;
+    @include parrafo;
 }
 
 .socios__activos {

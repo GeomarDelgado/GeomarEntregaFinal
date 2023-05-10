@@ -18,6 +18,7 @@ footer {
     }
 
     &__parrafo {
+        @include parrafo;
         font-size: 1rem;
         text-align: justify;
         padding: 2em;

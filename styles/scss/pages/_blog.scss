@@ -16,6 +16,7 @@
     }
 
     &__parrafo{
+        @include parrafo;
         text-align: justify;
     }
 
